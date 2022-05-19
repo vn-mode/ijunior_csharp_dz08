@@ -7,16 +7,16 @@ namespace vn_mode_csharp_dz08
         static void Main(string[] args)
         {
             string userInput;
-            int howManyTimes;
+            int numberOfImpressions;
 
             Console.Write("Напишите что-то приятное: ");
             userInput = Console.ReadLine();
             Console.Write($"Сколько раз вам вывести на экран '{userInput}': ");
-            howManyTimes = Convert.ToInt32(Console.ReadLine());
+            numberOfImpressions = Convert.ToInt32(Console.ReadLine());
+            Console.ForegroundColor = ConsoleColor.Cyan;
 
-            for (int i = 0; i < howManyTimes; i++)
+            for (int i = 0; i < numberOfImpressions; i++)
             {
-                Console.ForegroundColor = ConsoleColor.Cyan;
                 Console.WriteLine(userInput);
             }
         }
